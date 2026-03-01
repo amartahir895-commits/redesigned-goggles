@@ -24,7 +24,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"status": "Active", "message": "Smart Utility API is running!"}
+    return {"status": "Active", "message": "Smart Utility API is running!ammar op"}
 
 # 1. Sentiment Analysis Tool
 @app.get("/analyze-sentiment")
