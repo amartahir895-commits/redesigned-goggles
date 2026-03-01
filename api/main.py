@@ -5,7 +5,21 @@ import qrcode
 from textblob import TextBlob
 import requests
 from bs4 import BeautifulSoup
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware # 1. Isay import karein
 
+app = FastAPI()
+
+# 2. Ye block poora copy karke 'app = FastAPI()' ke foran baad likhen
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# ... baaki aapka purana code niche rahega
 app = FastAPI()
 
 @app.get("/")
