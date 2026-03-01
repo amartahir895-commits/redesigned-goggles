@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+qrcode
+textblob
+requests
+beautifulsoup4
+pillow
